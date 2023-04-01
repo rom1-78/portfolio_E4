@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 nav a{
     color: black;
     text-decoration: none;
@@ -70,21 +69,6 @@ nav a{
 }
 
 
-.cinq::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-.cinq{
-    position: relative;
-}
-
 nav a:hover{
     color: black;
 }
@@ -121,45 +105,92 @@ nav ul{
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
-    background-color: #2f1d58;
+    background: rgb(237,139,40);
+    background: linear-gradient(1deg, rgba(237,139,40,0.8435574913559174) 8%, rgba(45,196,253,0.8351541300113796) 100%);    
     height: auto;
     flex-direction: row;
     padding-top: 5%;
 }
 
-.FlexContainer .titre4,.titre5 {
-    width: 100%;
-    height: 500px;
-    margin: 5px;
-    background-color: grey;
-}
-
 h2{
     color: white;
+    text-decoration: underline;
+    font-family: verdana, sans-serif;
+    font-size: italic;
+    font-weight: bold;
 }
 
 .FlexContainer .titre1{
     width: 100%;
     height: auto;
-    background-color: grey;
     margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+.FlexContainer .bulle0{
+    border-radius : 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-image: linear-gradient(to right bottom, #617fac, #6b87b0, #768eb4, #8096b8, #8a9ebc);
+    width: 20%;
+    height: 250px;
+    animation-duration: 13s;
+    animation-name: blob-animation0;
+    animation-iteration-count: infinite;
+}
+
+
+.bulle0 p{
+    position: relative;
+    top: 20%;
+    width: 70%;
+    left: 10%;
+    text-align: center;
+}
+
+@keyframes blob-animation0{
+  0%{
+    border-radius: 58% 42% 71% 29% / 40% 60% 40% 60%  ;
+  }
+  10%{
+    border-radius: 43% 57% 63% 37% / 40% 36% 64% 60%  ;
+  }
+
+  25%{
+    border-radius: 34% 66% 29% 71% / 62% 27% 73% 38%  ;
+  }
+
+  50%{
+    border-radius: 51% 49% 55% 45% / 37% 57% 43% 63%  ;
+  }
+
+  75%{
+    border-radius: 60% 40% 72% 28% / 51% 66% 34% 49%  ;
+  }
+  90%{
+    border-radius: 37% 63% 51% 49% / 51% 60% 40% 49% ;
+  }
+  100%{
+    border-radius: 58% 42% 71% 29% / 40% 60% 40% 60% ;
+  }
 }
 
 .FlexContainer .bulle1{
     border-radius : 30% 70% 70% 30% / 30% 30% 70% 70% ;
-    background-color: grey;
+    background-image: linear-gradient(to right bottom, #617fac, #6b87b0, #768eb4, #8096b8, #8a9ebc);
     width: 30%;
-    height: 300px;
+    height: 400px;
     animation-duration: 13s;
     animation-name: blob-animation1;
     animation-iteration-count: infinite;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
 
 
 .bulle1 p{
     position: relative;
-    top: 25%;
-    width: 80%;
+    top: 20%;
+    width: 82%;
     left: 10%;
 }
 
@@ -192,20 +223,21 @@ h2{
 
 .FlexContainer .bulle2{
     border-radius: 66% 34% 60% 40% / 30% 52% 48% 70% ;
-    background-color: grey;
-    width: 30%;
-    height: 550px;
+    background-image: linear-gradient(to right bottom, #6281af, #6986b0, #718ab1, #788fb2, #7f94b3);    
+    width: 40%;
+    height: 650px;
     animation-duration: 13s;
     animation-name: blob-animation2;
     animation-iteration-count: infinite;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 .bulle2 p{
     position: relative;
-    top: 21%;
-    width: 75%;
+    top: 20%;
+    width: 80%;
     left: 10%;
+    text-align: center;
 }
 @keyframes blob-animation2{
   0%{
@@ -236,12 +268,14 @@ h2{
 
 .FlexContainer .bulle3{
     border-radius : 30% 70% 70% 30% / 30% 30% 70% 70% ;
-    background-color: grey;
-    width: 35%;
-    height: 400px;
+    background-image: linear-gradient(to right bottom, #6d89b3, #728eb8, #7794be, #7d99c3, #829fc9);
+    width: 40%;
+    height: 550px;
     animation-duration: 13s;
     animation-name: blob-animation3;
     animation-iteration-count: infinite;
+    margin-left: 10%;
+    margin-top: 20%;
 }
 
 
@@ -279,12 +313,13 @@ h2{
     border-radius: 58% 42% 71% 29% / 40% 60% 40% 60% ;
   }
 }
+ 
 
 .FlexContainer .titre2{
     width: 100%;
     height: auto;
     margin-top: 5%;
-    background-color: grey;
+    margin-left: 1%;
 }
 
 /* ================ The Timeline ================ */
@@ -571,7 +606,8 @@ h2{
     width: 90%;
     height: auto;
     margin-top: 5%;
-    background-color: #165561;
+    /*background-color: #165561;*/
+    border: 2px solid #008aff;
     color: white;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
@@ -580,18 +616,157 @@ h2{
     position: relative;
     top: 25%;
     text-align: center;
+    color: #333333;
+}
+
+.swiper {
+      width: 60%;
+      height: 350px;
+     margin-top: 1%;
+     margin-bottom: 3%;
+     border-radius: 5px;
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.swiper-slide img {
+      display: block;
+      object-fit: cover;
+      background-size: cover;
+      width: 100%;
+}
+
+.FlexContainer .projet_portfolio{
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+    background-color: #de7c7c;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin-left: 1%;
+}
+
+.projet_portfolio p{
+    position: relative;
+    text-align: center;
+    margin-top: 2%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.FlexContainer .projet_zoo{
+    width: 30%;
+    height: auto;
+    margin-top: 7%;
+    background-color: #e67e30;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin-left: 1%;
+}
+
+.projet_zoo p{
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 17%;
+}
+
+.FlexContainer .projet_gantt{
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+    background-color: #5c159b;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    margin-left: 1%;
+}
+
+.projet_gantt p{
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 17%;
+    color: white;
+}
+
+.FlexContainer .projet_VVA{
+    width: 30%;
+    padding-right: 3%;
+    padding-left: 3%;
+    height: auto;
+    margin-top: 2%;
+    background-color: #212529;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    margin-left: 1%;
+}
+
+.projet_VVA p{
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 17%;
+    color: #989a9c;
+}
+
+.FlexContainer .projet_match{
+    width: 30%;
+    height: auto;
+    padding-bottom: 5%;
+    margin-top: 1%;
+    background-image: linear-gradient(to right bottom, #8c8a87, #9f917d, #b29873, #c69e69, #daa45f);    
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    margin-left: 1%;
+}
+
+.projet_match p{
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 17%;
 }
 
 .FlexContainer .titre3{
     width: 100%;
     height: auto;
     margin-top: 2%;
-    background-color: grey;
+    margin-left: 1%;
 }
 
 .FlexContainer .chatGPT{
+    clip-path: circle(50% at 50% 50%);
+    margin-left: 1%;
+    width: 70%;
+    height: 500px;
+    margin-top: 2%;
+    border: 3px solid #ff4c00;
+}
+
+.chatGPT p{
+    position: relative;
+    top: 25%;
+    text-align: center;
+}
+
+.FlexContainer .titre4{
     width: 100%;
     height: auto;
     margin-top: 2%;
-    background-color: grey;
+    margin-left: 1%;
+}
+
+.FlexContainer .citation{
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    background: rgb(250,183,107);
+    background: linear-gradient(90deg, rgba(250,183,107,1) 0%, rgba(255,154,45,0.9415967070421919) 50%, rgba(250,183,107,0.9331933456976541) 100%);      
+    text-align: center;
 }

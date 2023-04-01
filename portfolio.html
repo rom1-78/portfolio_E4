@@ -7,6 +7,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title></title>
 </head>
 <body>
@@ -14,11 +16,11 @@
     <nav>
       <h1 id="logo">Epreuve E4</h1>
         <ul>
+          <li><a class="un" href="#">Romain FRETET</a></li>
           <li><a id="un" class="un" href="#titre1">A propos de la formation</a></li>
           <li><a id="deux" class="deux" href="#titre2">Experiences professionnelles</a></li>
-          <li><a id="trois" class="trois" href="#titre3">Veille technologique</a></li>
           <li><a id="quatre" class="quatre" href="#titre4">Projets en cours de formation</a></li>
-          <li><a id="cinq" class="cinq" href="#titre5">Les lives</a></li>
+          <li><a id="trois" class="trois" href="#titre3">Veille technologique</a></li>
         </ul>
     </nav>
 
@@ -27,6 +29,12 @@
           <div class="titre1" id="titre1">
             <h2>A propos de la formation</h2>
           </div>
+
+            <div class="bulle0">
+                <p>
+                Je m'appelle Romain FRETET, j'ai 20ans, je suis étudiant au lycée parc Vilgénis en BTS SIO option SLAM<br>
+                <a class="desc" target="_bank" style="margin-left: 10%; font-size: 1.5em;" href="CV_FRETET_ROMAIN_ENSITECH_BACH_DFS_SQY.pdf" download="CV_FRETET_ROMAIN_ENSITECH_BACH_DFS_SQY.pdf">Voir mon CV </a></p>
+            </div> <br>
 
             <div class="bulle1">
 
@@ -61,8 +69,9 @@
                 <p>
                 La formation en BTS SIO option SLAM comprend également une période de stage en entreprise d'une durée de 8 à 12 semaines. Ce stage permet aux étudiants de mettre en pratique les compétences acquises en classe et de se familiariser avec le monde professionnel.
 
-                Après l'obtention de leur diplôme, les diplômés du BTS SIO option SLAM peuvent travailler en tant que développeur d'applications métiers, chef de projet informatique, analyste-programmeur, consultant informatique, etc. Ils peuvent également poursuivre leurs études en intégrant une licence professionnelle ou une école d'ingénieurs.</p>
-              </div>
+                Après l'obtention de leur diplôme, les diplômés du BTS SIO option SLAM peuvent travailler en tant que développeur d'applications métiers, chef de projet informatique, analyste-programmeur, consultant informatique, etc. Ils peuvent également poursuivre leurs études en intégrant une licence professionnelle ou une école d'ingénieurs.<br>
+                </p>
+              </div> <br>
 
               <div class="titre2" id="titre2">
             	   <h2>Experiences professionnelles</h2>
@@ -79,7 +88,7 @@
                       <span class="flag">BTS - Stage de deuxième année</span>
                       <span class="time-wrapper"><span class="time">2023</span></span>
                     </div>
-                    <div class="desc"><a href="rapport_de_stage_SEMIV_2eme_annee.pdf" download="rapport_de_stage_SEMIV_2eme_annee.pdf">Rapport de stage</a></div>
+                    <div class="desc"><a href="rapport_de_stage_SEMIV_2eme_annee.pdf" target="_bank" download="rapport_de_stage_SEMIV_2eme_annee.pdf">Rapport de stage</a></div>
                   </div>
                 </li>
                 
@@ -90,7 +99,7 @@
                       <span class="flag">BTS - Stage première année</span>
                       <span class="time-wrapper"><span class="time">2022</span></span>
                     </div>
-                    <div class="desc"><a href="rapport_de_stage_SEMIV_1ere_annee.pdf" download="rapport_de_stage_SEMIV_1ere_annee.pdf">Rapport de stage</a></div>
+                    <div class="desc"><a href="rapport_de_stage_SEMIV_1ere_annee.pdf" target="_bank" download="rapport_de_stage_SEMIV_1ere_annee.pdf">Rapport de stage</a></div>
                   </div>
                 </li>
 
@@ -121,7 +130,98 @@
 
               <p>Ils m'ont accueilli pour mes 2 stages de BTS grâce à un contact que j'ai en interne, j'ai su développé des relations avec mes collègues et me faire apprécier de tous en remplissant mes missions</p>
 
+            </div>
 
+
+            <div class="titre4" id="titre4">
+              <h2>Projets en cours de formation</h2>
+            </div>
+
+            <div class="projet_portfolio" data-aos="fade-up">
+                <p>Ce projet de début de première année montre l'initiation au HTML et CSS.<br>
+                Ce début de portfolio réalisé en première année montre la progression de niveau et l'experience aquise lors de ce BTS.<br>
+                <a href="https://rom1-78.github.io/portfolio/" target="_bank">portfolio</a></p>
+            </div>
+
+            <div class="swiper mySwiper" data-aos="fade-down">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="screen_index_portfolio_chergui.png"></div>
+              <div class="swiper-slide"><img src="screen_menu_portfolio_chergui.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+                  
+            <div class="projet_zoo" data-aos="fade-right">
+              <p>Ce projet de milieu de première année montre le début de l'utilisation du SQL et PHP</p>
+            </div>
+
+            <div class="swiper mySwiper" data-aos="fade-left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="screen_connexion_zoo.png"></div>
+              <div class="swiper-slide"><img src="screen_index_zoo.png"></div>
+              <div class="swiper-slide"><img src="screen_insertion_zoo.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_zoo.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+
+
+            <div class="projet_gantt" data-aos="fade-up-right">
+              <p>Ce projet en fin de deuxième année est un créeateur de diagramme de gantt prenant en compte plein de parametres.<br>
+              il est codé en HTML CSS PHP SQL et Jquery</p>
+            </div>
+
+            <div class="swiper mySwiper" data-aos="fade-up-left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="screen_connexion_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_creer_projet_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_projet_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_creer_tache_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_tache_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_gantt.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_gantt2.png"></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="projet_VVA" data-aos="fade-down-right">
+              <p>Ce projet est basé sur la gestion d'activité et d'animation dans un village de vacances pour des vacanciers, il est plus complet que tous les autres projets en developpement web précédent avec plein de requetes SQL assez complexe et un code particulierement lourd</p>
+            </div>
+
+            <div class="swiper mySwiper" data-aos="fade-down-left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="screen_connexion_VVA.png"></div>
+              <div class="swiper-slide"><img src="screen_insertion_VVA.png"></div>
+              <div class="swiper-slide"><img src="screen_liste_VVA.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_VVA.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_VVA2.png"></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="projet_match" data-aos="flip-up">
+              <p>Ce projet est mon premier en C# langage orienté objet. C'est un langage de programmation lourd pour des applications clients
+                Dans ce projet j'ai 2 types de profils:<br>
+                - 1 profil de visiteur sur l'application, il ne peut que rechercher des afficher des informations<br>
+                - 1 profil d'admin qui permet la gestion des joueurs, équipes et matchs ainsi que les resultats</p>
+            </div>
+
+            <div class="swiper mySwiper" data-aos="flip-down">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="screen_connexion_match.png"></div>
+              <div class="swiper-slide"><img src="screen_menu_match.png"></div>
+              <div class="swiper-slide"><img src="screen_menu_match_admin.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_match.png"></div>
+              <div class="swiper-slide"><img src="screen_bdd_match2.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             </div>
 
             <div class="titre3" id="titre3">
@@ -129,44 +229,38 @@
             </div>
 
             <div class="chatGPT">
-            	dire en quoi ca consiste / utilisation d'outil / demarche / resultat
-              La veille technologique consiste à s'informer en continu sur les nouveautés du secteur informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but d'être le meilleur dans son domaine.
+            	<p style="width: 70%; margin-left: 15%;"> utilisation d'outil / demarche / resultat <br>
+              La veille technologique consiste à s'informer en continu sur les nouveautés du secteur informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but d'être le meilleur dans son domaine.<br>
+              <a style="font-style: italic; font-size:  2em;" href="VEILLE_TECHNOLOGIQUE.docx" download="VEILLE_TECHNOLOGIQUE.docx">Veille technologique</a><br></p>
 
-              Google Alert
+              <p style="width: 75%; margin-left: 12%;">
+              Le thème de veille technologique que j'ai décidé d'aborder est l'intelligence artificielle, car en tant que future développeur informatique, je risque d'en developper ou meme d'en avoir besoin.
+              </p>
 
-              recherches + alertes + conferences
-
-              
-
- 
-
-              Le thème de veille technologique que j'ai décidé d'aborder s'intitule "La sécurité des données Web pour un développeur", car en tant que future développeur informatique, je risque d'être confrontée à divers problèmes liés au développement Web.
-
-              
+              <p style="width: 70%; margin-left: 15%;">
             	intelligence artificiel = se nourrit de nos connaissances et est voué a remplacer l'humain dans les taches dangeureuses, repetitive ou non attractive
               chat gpt
             	chat gpt4
             	chat gpt premium
             	bart developpé par google
+
+              pour réaliser cette veille technologique j'ai utilisé Google Alert + fait des recherches + j'assisterai à la conference de luc julia sur l'IA
+
+              concurrent : jasper, Bard
+              </p>
             </div>
 
-            <div class="titre4" id="titre4">
+            <div class="citation">
+              <p>"Votre travail c’est la découverte, votre tâche est de s’y consacrer avec tout votre cœur."</p>
 
-            	<h2>Projets en cours de formation</h2>
-
-            </div>
-
-            <div class="titre5" id="titre5">
-
-            	<h2>Les lives</h2>
-              l'implication, la regularité,le travail d'equipe, assiduité ect
+              <p>Bouddha</p>
             </div>
 
         </section>
 
-        <p>"Votre travail c’est la découverte, votre tâche est de s’y consacrer avec tout votre cœur."</p>
 
-        <p>Bouddha</p>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="portfolio.js"></script>
 
 </body>
